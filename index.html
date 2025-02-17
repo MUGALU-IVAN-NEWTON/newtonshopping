@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div class="main">
+        <div>
+            <img class="tv" src="shopping-img/bag.png" />
+            <p class="text">Laptop Bag</p>
+            <button class="Add" onclick="add1()">Add Cart</button>
+        </div>
+        <div>
+            <img class="tv" src="shopping-img/car.png" />
+            <p class="text">Car</p>
+            <button class="Add" onclick="add2()">Add Cart</button>
+        </div>
+        <div>
+            <img class="tv" src="shopping-img/phone.png" />
+            <P class="text">Phone</p>
+            <button class="Add" onclick="add3()">Add Cart</button>
+
+        </div>
+        <div>
+            <img class="tv" src="shopping-img/tv.png" />
+            <p class="text">TV</p>
+            <button class="Add" onclick="add4()">Add Cart</button>
+        </div>
+    </div>
+    <div>
+        <p class="cart" id="cart"> </p>
+    </div>
+    <script>
+        let addcart = document.getElementById("cart")
+        let cart= [];
+        function add1(){
+            cart.push("laptop bag");
+            addcart.innerText = cart
+            console.log("click");
+        }
+        
+        function add2(){
+            cart.push("car");
+            addcart.innerText = cart
+        }
+    
+        function add3(){
+            cart.push("phone");
+            addcart.innerText = cart
+        }
+
+        function add4(){
+            cart.push("TV");
+            addcart.innerText = cart
+        }
+
+    </script>
+</body>

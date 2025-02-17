@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tv{
+    border: none;
+    width: 200px;
+}
+.text{
+    color: blue;
+    font-family: cursive;
+    font-size: large;
+}
+.add{
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.cart{
+    font-family: fantasy;
+    font-size: large;
+}
