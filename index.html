@@ -2,38 +2,67 @@
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <div class="main">
-        <div>
+    <div class="main1">
+        <div class="ns">
+            <h3 >Newton's Shopping Site</h3>
+        </div>
+        <div class="main2">
+            <a href="http://127.0.0.1:5500/basic-java/testing/test.html" class="cart" id="cart" target=”_blank”>Cart</a>
+        </div>
+    </div>
+    
+    <div class="main3">
+        <div class="same">
             <img class="tv" src="shopping-img/bag.png" />
             <p class="text">Laptop Bag</p>
+            <div class="but">
+                <button class="button" onclick="more1()">&#45;</button>
+                <p class="quantity" id="quantity1">1</p>
+                <button class="button" onclick="less1()">&#43;</button>
+            </div>
             <button class="Add" onclick="add1()">Add Cart</button>
         </div>
-        <div>
+        <div class="same">
             <img class="tv" src="shopping-img/car.png" />
             <p class="text">Car</p>
+            <div class="but">
+                <button class="button" onclick="more2()">&#45;</button>
+                <p class="quantity" id="quantity2">1</p>
+                <button class="button" onclick="less2()">&#43;</button>
+            </div>
             <button class="Add" onclick="add2()">Add Cart</button>
         </div>
-        <div>
+        <div class="same">
             <img class="tv" src="shopping-img/phone.png" />
             <P class="text">Phone</p>
+                <div class="but">
+                    <button class="button" onclick="more3()">&#45;</button>
+                    <p class="quantity" id="quantity3">1</p>
+                    <button class="button"onclick="less3()" >&#43;</button>
+                </div>    
             <button class="Add" onclick="add3()">Add Cart</button>
 
         </div>
-        <div>
+        <div class="same">
             <img class="tv" src="shopping-img/tv.png" />
             <p class="text">TV</p>
+            <div class="but">
+                <button class="button" onclick="more4()">&#45;</button>
+                <p class="quantity" id="quantity4">1</p>
+                <button class="button" onclick="less4()">&#43;</button>
+            </div>
             <button class="Add" onclick="add4()">Add Cart</button>
         </div>
     </div>
     <div>
-        <p class="cart" id="cart"> </p>
+        <!-- <p id="cart"> </p> -->
     </div>
     <script>
         let addcart = document.getElementById("cart")
         let cart= [];
         function add1(){
-            cart.push("laptop bag");
-            addcart.innerText = cart
+            cart.push("laptop bag")
+            addcart.innerText= cart(quantity) 
             console.log("click");
         }
         
@@ -52,5 +81,56 @@
             addcart.innerText = cart
         }
 
+        let quantityscore1 = document.getElementById("quantity1")
+        let quantity = 1
+        function more1(){
+            if(quantity > 1){
+                quantity--
+            quantityscore1.innerText = quantity
+            }
+        }
+        function less1(){
+            quantity++
+            quantityscore1.innerText = quantity
+        }
+        
+        let quantityscore2 = document.getElementById("quantity2")
+        let quantity2 = 1
+        function more2(){
+            if(quantity2 > 1){
+                quantity2 = quantity2 - 1
+                quantityscore2.innerText = quantity2
+            }
+             
+        }
+        function less2(){
+            quantity2 = quantity2 + 1
+            quantityscore2.innerText = quantity2
+        }
+
+        let quantityscore3 = document.getElementById("quantity3")
+        let quantity3 = 1
+        function more3(){
+            if(quantity3 > 1){
+                quantity3 --
+                quantityscore3.innerText = quantity3
+            }
+        }
+        function less3(){
+            quantity3 ++
+            quantityscore3.innerText = quantity3        
+        }
+
+        let quantityscore4 = document.getElementById("quantity4")
+        let quantity4 = 1
+        function more4(){
+            if(quantity4 > 1){
+                quantity4 --
+                quantityscore4.innerText = quantity4            }
+        }
+        function less4(){
+            quantity4 ++
+            quantityscore4.innerText = quantity4
+        }
     </script>
 </body>

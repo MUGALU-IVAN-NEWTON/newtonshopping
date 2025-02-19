@@ -1,4 +1,17 @@
-.main{
+body{
+    background-color: #EBEBF0;
+}
+.main1{
+    display: flex;
+    justify-content: space-around;
+}
+.ns{
+    font-size: 60px;
+    color: red;
+    justify-self: center;
+    align-self: center;
+}
+.main3{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,6 +20,7 @@
     border: none;
     width: 200px;
     height: 150px;
+    background: #EBEBF0;
 }
 .text{
     color: blue;
@@ -20,5 +34,26 @@
 }
 .cart{
     font-family: fantasy;
-    font-size: large;
+    font-size: 30px;
+}
+.main2{
+    justify-self: right;
+    align-self: right;
+    margin-bottom: 20px;
+    margin-top:10px; 
+    margin-right: 0;
+}
+.but{
+    display: flex;
+    padding: 10px 10px;
+
+}
+.button{
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+.same{
+    align-items: center;
+    justify-items: center;
 }
